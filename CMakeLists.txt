@@ -6,7 +6,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
 find_package(fmt REQUIRED)
-add_executable(cmake_example main.cpp)
+add_executable(cmake_example src/main.cpp)
 target_link_libraries(cmake_example PRIVATE fmt::fmt)
 
 if ( CMAKE_CXX_COMPILER_ID MATCHES "Clang|AppleClang|GNU" )
