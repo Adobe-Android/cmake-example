@@ -1,3 +1,5 @@
+# https://releases.llvm.org/9.0.0/tools/clang/docs/ClangFormatStyleOptions.html
+
 ---
 Language:        Cpp
 # BasedOnStyle:  Microsoft
@@ -74,7 +76,8 @@ IncludeCategories:
   - Regex:           '.*'
     Priority:        1
 IncludeIsMainRegex: '(Test)?$'
-IndentCaseLabels: false
+# IndentCaseLabels: false
+IndentCaseLabels: true
 IndentPPDirectives: None
 IndentWidth:     4
 IndentWrappedFunctionNames: false
