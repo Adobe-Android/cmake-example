@@ -1,12 +1,10 @@
-cmake_minimum_required(VERSION 3.10...3.15)
+cmake_minimum_required(VERSION 3.9...3.18)
 project(cmake_example VERSION 0.1.0 DESCRIPTION "An example CMake project to be used as a template" LANGUAGES CXX)
-
-set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
-set(CMAKE_CXX_EXTENSIONS OFF)
 
 find_package(fmt REQUIRED)
 add_executable(cmake_example src/main.cpp)
+target_compile_features(cmake_example PUBLIC cxx_std_17)
+set_target_properties(cmake_example PROPERTIES CXX_EXTENSIONS OFF)
 target_link_libraries(cmake_example PRIVATE fmt::fmt)
 
 if ( CMAKE_CXX_COMPILER_ID MATCHES "Clang|AppleClang|GNU" )
