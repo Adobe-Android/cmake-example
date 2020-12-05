@@ -1,5 +1,5 @@
 ---
-# Defines the Google style for automatic reformatting.
+# Defines the Chromium style for automatic reformatting.
 # http://clang.llvm.org/docs/ClangFormatStyleOptions.html
 
 # Run manually to reformat a file:
